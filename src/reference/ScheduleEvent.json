@@ -1,0 +1,55 @@
+{
+  "name": "ScheduleEvent",
+  "type": "object",
+  "properties": {
+    "course_id": {
+      "type": "string",
+      "description": "\u8ab2\u7a0bID"
+    },
+    "course_name": {
+      "type": "string",
+      "description": "\u8ab2\u7a0b\u540d\u7a31"
+    },
+    "course_color": {
+      "type": "string",
+      "description": "\u8ab2\u7a0b\u984f\u8272"
+    },
+    "date_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "\u4e0a\u8ab2\u65e5\u671f\u6642\u9593"
+    },
+    "note": {
+      "type": "string",
+      "description": "\u5099\u8a3b"
+    },
+    "attendees": {
+      "type": "array",
+      "description": "\u51fa\u5e2d\u5b78\u751f\u540d\u55ae",
+      "items": {
+        "type": "object",
+        "properties": {
+          "student_id": {
+            "type": "string"
+          },
+          "student_name": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "present",
+              "absent",
+              "excused"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "course_id",
+    "date_time"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Student",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "\u5b78\u751f\u59d3\u540d"
+    },
+    "email": {
+      "type": "string",
+      "description": "\u96fb\u5b50\u90f5\u4ef6"
+    },
+    "phone": {
+      "type": "string",
+      "description": "\u96fb\u8a71\u865f\u78bc"
+    },
+    "note": {
+      "type": "string",
+      "description": "\u5099\u8a3b"
+    },
+    "enrollments": {
+      "type": "array",
+      "description": "\u5df2\u8cfc\u8cb7\u7684\u8ab2\u7a0b\u5802\u6578",
+      "items": {
+        "type": "object",
+        "properties": {
+          "course_id": {
+            "type": "string"
+          },
+          "course_name": {
+            "type": "string"
+          },
+          "total_purchased": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

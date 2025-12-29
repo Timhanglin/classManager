@@ -1,0 +1,22 @@
+{
+  "name": "Course",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "\u8ab2\u7a0b\u540d\u7a31"
+    },
+    "description": {
+      "type": "string",
+      "description": "\u8ab2\u7a0b\u5099\u8a3b"
+    },
+    "color_hex": {
+      "type": "string",
+      "description": "\u884c\u4e8b\u66c6\u986f\u793a\u984f\u8272",
+      "default": "#4F46E5"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}
