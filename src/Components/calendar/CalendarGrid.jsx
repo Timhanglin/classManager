@@ -1,7 +1,7 @@
 import React from 'react';
 import { format, startOfMonth, endOfMonth, startOfWeek, endOfWeek, addDays, isSameMonth, isSameDay, isToday } from 'date-fns';
 import { zhTW } from 'date-fns/locale';
-import { cn } from '@/lib/utils';
+import { cn } from '@/utils';
 
 const weekDays = ['日', '一', '二', '三', '四', '五', '六'];
 
